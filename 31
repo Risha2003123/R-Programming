@@ -1,0 +1,17 @@
+values<-c(90, 50, 70, 80, 70, 60, 20, 30, 80, 90, 20) 
+me<-mean(values)
+print("Mean:")
+print(me)
+med<-median(values)
+print("Median:")
+print(med)
+mode<-function()
+{
+  print("Mode:")
+  return(names(sort(-table(values)))[1])
+}
+mode()
+print("Third lowest:")
+sort(values)[3]
+print("Second highest:")
+sort(values[length(values)-1])
