@@ -1,0 +1,5 @@
+head(iris)
+f.sample <- function(a, percent) a[sample(nrow(a), nrow(a)*percent, replace = TRUE),]
+
+f.sample(iris[iris$Species=="versicolor",], 0.8)
+f.sample(iris[iris$Species=="virginica",], 0.2)
